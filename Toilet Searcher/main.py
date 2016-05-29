@@ -1,8 +1,8 @@
 HOST = '127.0.0.1' 			#localhost
-PORT = 50007 			#¼­¹ö¿Í °°Àº Æ÷Æ®¸¦ »ç¿ëÇÔ
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #¼ÒÄÏ »ý¼º
+PORT = 50007 			#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 s.connect((HOST,PORT))
-s.send(b'Hello, python') 		#¹®ÀÚ¸¦ º¸³¿
-data = s.recv(1024) 		#¼­¹ö·Î ºÎÅÍ Á¤º¸¸¦ ¹ÞÀ½
+s.send(b'Hello, python') 		#ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½
+data = s.recv(1024) 		#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 s.close()
 print('Received', repr(data))
